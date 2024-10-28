@@ -25,14 +25,16 @@ const emitDeleteItem = () => emit("delete", props.index);
   overflow-y: auto;
   background-color: white;
   min-width: 220px;
+  max-width: 390px;
   margin: 5px auto 15px 5px;
   border-radius: 10px;
   padding: 10px;
   min-height: 60px;
   max-height: 200px;
-  text-wrap: balance;
+  text-wrap: wrap;
   color: black;
   user-select: none;
+  word-break: break-all;
 }
 
 .item-container::-webkit-scrollbar {
