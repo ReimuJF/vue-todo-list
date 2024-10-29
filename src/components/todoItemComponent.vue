@@ -5,6 +5,7 @@ const props = defineProps(["todo", "index"]);
 const emit = defineEmits(["status", "delete"]);
 const emitItemIndex = () => emit("status", props.index);
 const emitDeleteItem = () => emit("delete", props.index);
+
 </script>
 
 <template>

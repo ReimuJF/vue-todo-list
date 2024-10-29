@@ -2,7 +2,7 @@
 import { ref, onMounted, provide } from 'vue';
 import inputForm from './components/inputFormComponent.vue'
 import todoList from './components/todoListComponent.vue'
-import SortingComponent from './components/sortingComponent.vue';
+
 
 const data = ref([]);
 const errorMessage = ref(null);
@@ -28,7 +28,6 @@ provide("error", errorMessage);
 <template>
   <h1>Vue TODO List</h1>
   <inputForm />
-  <SortingComponent />
   <todoList />
 </template>
 

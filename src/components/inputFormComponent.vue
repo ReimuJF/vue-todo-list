@@ -3,7 +3,7 @@ import { ref, computed, inject } from 'vue';
 const itemText = ref('');
 const entryNotEmpty = computed(() => itemText.value.trim().length > 0);
 const todoList = inject('todoList');
-const emitItemAdd = () => {
+const itemAdd = () => {
     if (entryNotEmpty.value) {
         todoList.value.push({
             "userId": 11,
@@ -19,9 +19,9 @@ const emitItemAdd = () => {
 <template>
     <div class="input-container">
         <label for="entry" style="font-size: 1.2rem;">Добавить запись: </label>
-        <input type="text" id="entry" v-model="itemText" @keyup.enter="emitItemAdd" />
+        <input type="text" id="entry" v-model="itemText" @keyup.enter="itemAdd" />
         <button class="button orange-background" :disabled="!entryNotEmpty"
-            @click="emitItemAdd"><span>Добавить</span></button>
+            @click="itemAdd"><span>Добавить</span></button>
     </div>
 </template>
 
