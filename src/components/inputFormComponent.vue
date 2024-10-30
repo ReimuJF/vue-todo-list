@@ -48,7 +48,7 @@ const itemAdd = () => {
 
 .button {
     margin-left: 20px;
-    font-family: 'Roboto';
+    font-family: 'Roboto-medium';
     font-size: 1.2rem;
     padding: 5px 10px 5px 10px;
     color: black;

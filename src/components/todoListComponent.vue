@@ -72,6 +72,8 @@ function deleteItem(index) {
 
 <style scoped>
 .hint {
+    font-family: 'Roboto';
+    font-weight: 500;
     display: block;
     margin: 15px 0;
     color: #cac6c6;
